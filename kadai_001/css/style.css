@@ -1,0 +1,213 @@
+/* html {
+  font-family: "Noto Sans JP", sans-serif;
+} */
+
+.html {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400 700;
+  font-style: normal;
+}
+
+/* headerの調整 */
+
+.header-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+}
+
+.home{
+    border: solid;
+    padding: 1px 22px;
+    text-decoration: none;
+}
+
+.nav-inner{
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.nav-inner a{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+.nav-about{
+    padding-right: 18px;
+}
+
+/* mainの内容 */
+
+/* sectionの内容 */
+
+.first-view{
+    height: 587px;
+    width: 100%;
+}
+
+/* .section-style{
+    text-align: ;
+} */
+
+h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+#about{
+    margin-top: 72px;
+    margin-bottom: 73px;
+}
+
+.about-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.self-photo{
+    border-radius: 100%;
+    margin-right: 120px;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#works{
+    margin-top: 87px;
+}
+
+.works-inner{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+.works-inner img{
+    height: 180px;
+}
+
+.works-inner div{
+    width: 240px;
+}
+
+.works-inner p{
+    font-size: 18px;
+}
+
+/* .works-inner p{
+    text-wrap: wrap;
+} */
+
+.nigata{
+    padding-right: 16px;
+}
+
+.nagano{
+    padding-right: 16px;
+}
+
+/* footerの内容 */
+
+#footer-inner{
+    display: block;
+    justify-content: center;
+}
+
+#footer-inner p{
+    text-align: center;
+    margin-top: 80px;
+    padding: 10px 56px;
+    font-size: 18px;
+}
+
+
+/* レスポンシブ */
+
+
+@media screen and (max-width: 375px) {
+    .header-inner{
+        /* flex-direction: column; */
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .home{
+        border: solid;
+        padding: 8px 16px;
+        text-decoration: none;
+        font-size: 24px;
+        margin-right: 28px;
+    }
+
+    .nav-inner{
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+    }
+
+    .first-view{
+        height: 155px;
+        width: 100%;
+    }
+
+    h2{
+        font-size: 28px;
+    }
+
+    .about-inner{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 40px;
+    }
+
+    .self-photo{
+        margin-right: 0px;
+    }
+
+    .works-inner{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .works-inner img{
+        height: 268px;
+        width: 355px;
+    }
+
+    .works-inner p{
+        text-align: center;
+    }
+
+    .works-inner div{
+        width: 355px;
+    }
+
+    .nigata{
+        padding-right: 0;
+        margin-bottom: 44px;
+    }
+
+    .nagano{
+        padding-right: 0;
+         margin-bottom: 44px;
+    }
+
+    #footer-inner p{
+        text-align: center;
+        margin-top: 42px;
+        padding: 10px 0;
+        font-size: 18px;
+    }
+}
